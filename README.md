@@ -8,9 +8,9 @@ This repo contains some basic techniques for processing Digital Signals.
 - Analog signals are present all around us, may it be **temperature, heart rate or sound**;
 - These signals need to be converted to digital form so that our computers can process and analyse the signals easily;
 
-[![](https://mermaid.ink/img/eyJjb2RlIjoiZ3JhcGggTFJcbiAgWC0tPnxJbnB1dHwgQVtMUEZdXG4gIEFbTG93IFBhc3MgRmlsdGVyXSAtLT5CW1NhbXBsZXJdXG4gIEIgLS0-IENbUXVhbnRpemVyXVxuICBDIC0tPkRbRW5jb2Rlcl1cbiAgXG5cdFx0IiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifX0)](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggTFJcbiAgWC0tPnxJbnB1dHwgQVtMUEZdXG4gIEFbTG93IFBhc3MgRmlsdGVyXSAtLT5CW1NhbXBsZXJdXG4gIEIgLS0-IENbUXVhbnRpemVyXVxuICBDIC0tPkRbRW5jb2Rlcl1cbiAgXG5cdFx0IiwibWVybWFpZCI6eyJ0aGVtZSI6ImRlZmF1bHQifX0)
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/images/encoding.png?raw=true)
 
-[![](https://mermaid.ink/img/eyJjb2RlIjoiZ3JhcGggTFJcbiAgWC0tPnxmcm9tIEVuY29kZXJ8RVtEU1BdXG4gIEUtLT5GW0RlY29kZXJdXG4gIEYtLT5HW0ludGVycG9sYXRvcl1cbiAgRy0tPllbT3V0cHV0XVxuICBcblx0XHQiLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9fQ)](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggTFJcbiAgWC0tPnxmcm9tIEVuY29kZXJ8RVtEU1BdXG4gIEUtLT5GW0RlY29kZXJdXG4gIEYtLT5HW0ludGVycG9sYXRvcl1cbiAgRy0tPllbT3V0cHV0XVxuICBcblx0XHQiLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9fQ)
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/images/decoding.png?raw=true)
 
 - So, I will include some signal processing techniques that I do in my lab along with some additional information to get you started;
 - The motivation behind this is after getting yourself acquainted with the methods you can explore more in the world of **sensors, IoT, data processing and much more**;
