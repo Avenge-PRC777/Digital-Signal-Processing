@@ -48,7 +48,7 @@ Table of Contents
 - Filter is a system that either allows or rejects specific frequency components in the input to produce an output.
 - There are many types of filters
 
-$$\sin(\alpha)^{\theta}=\sum_{i=0}^{n}(x^i + \cos(f))$$
+$$y[n]=\sum_{k=0}^{L-1}(x[n-k])$$
 
 ## Pole Zero Analysis
 ## Results
