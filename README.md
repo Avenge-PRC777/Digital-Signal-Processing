@@ -10,12 +10,7 @@ This repo contains some basic techniques for processing Digital Signals.
 
 ###Sequence Diagram
 
-```seq
-Andrew->China: Says Hello
-Note right of China: China thinks\nabout it
-China-->Andrew: How are you?
-Andrew->>China: I am good thanks!
-```
+[![](https://mermaid.ink/img/eyJjb2RlIjoiZ3JhcGggTFJcbiAgWC0tPnxJbnB1dHwgQVtMUEZdXG4gIEFbTG93IFBhc3MgRmlsdGVyXSAtLT5CW1NhbXBsZXJdXG4gIEIgLS0-IENbUXVhbnRpemVyXVxuICBDIC0tPkRbRW5jb2Rlcl1cbiAgRFtFbmNvZGVyXS0tPkVbRFNQXVxuICBFLS0-RltEZWNvZGVyXVxuICBGLS0-R1tJbnRlcnBvbGF0b3JdXG4gIEctLT5ZW091dHB1dF1cblx0XHQiLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9fQ)](https://mermaid-js.github.io/mermaid-live-editor/#/edit/eyJjb2RlIjoiZ3JhcGggTFJcbiAgWC0tPnxJbnB1dHwgQVtMUEZdXG4gIEFbTG93IFBhc3MgRmlsdGVyXSAtLT5CW1NhbXBsZXJdXG4gIEIgLS0-IENbUXVhbnRpemVyXVxuICBDIC0tPkRbRW5jb2Rlcl1cbiAgRFtFbmNvZGVyXS0tPkVbRFNQXVxuICBFLS0-RltEZWNvZGVyXVxuICBGLS0-R1tJbnRlcnBvbGF0b3JdXG4gIEctLT5ZW091dHB1dF1cblx0XHQiLCJtZXJtYWlkIjp7InRoZW1lIjoiZGVmYXVsdCJ9fQ)
 
 - So, I will include some signal processing techniques that I do in my lab along with some additional information to get you started;
 - The motivation behind this is after getting yourself acquainted with the methods you can explore more in the world of **sensors, IoT, data processing and much more**;
