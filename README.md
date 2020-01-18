@@ -18,7 +18,9 @@ Table of Contents
 * [Table of Contents](#table-of-contents)
 * [Prerequisites](#prerequisites)
 * [Lab 01](#lab-01)
-
+  * [Filters](#filters)
+  * [Pole Zero Analysis](#pole-zero-analysis)
+  * [Results](#results)
 
 # Prerequisites
 
@@ -35,3 +37,7 @@ Table of Contents
 - **MATLAB**(Octave or Python may also serve as an alternative to visualize plots);
 
 # Lab 01
+
+## Filters
+## Pole Zero Analysis
+## Results
