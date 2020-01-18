@@ -9,3 +9,12 @@ This repo contains some basic techniques for processing Digital Signals.
 - These signals need to be converted to digital form so that our computers can process and analyse the signals easily;
 - So, I will include some signal processing techniques that I do in my lab along with some additional information to get you started;
 - The motivation behind this is after getting yourself acquainted with the methods you can explore more in the world of **sensors, IoT, data processing and much more**;
+
+**Table of Contents**
+
+[TOCM]
+
+[TOC]
+
+#H1 header
+
