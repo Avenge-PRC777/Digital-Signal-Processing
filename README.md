@@ -16,3 +16,9 @@ Table of Contents
 * [Digital\-Signal\-Processing](#digital-signal-processing)
 * [About](#about)
 
+# Prerequisites
+
+- Arduino Due;
+![](https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/500x375/f8876a31b63532bbba4e781c30024a0a/a/0/a000062_front_1.jpg)
+- Matlab(Octave or Python may also serve as an alternative to visualize plots);
+- 
