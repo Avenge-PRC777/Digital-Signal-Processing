@@ -12,11 +12,9 @@ This repo contains some basic techniques for processing Digital Signals.
 
 **Table of Contents**
 
-[TOCM]
-
 [TOC]
 
-#H1 header
+# H1 header
 
 H1 Header (Underline)
 =============
