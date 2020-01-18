@@ -6,6 +6,6 @@ This repo contains some basic techniques for processing Digital Signals.
 ### About
 
 - Analog signals are present all around us, may it be temperature, heart rate or sound;
--These signals need to be converted to digital form so that our computers can process and analyse the signals easily;
--So, I will include some signal processing techniques that I do in my lab along with some additional information to get you started;
--The motivation behind this is after getting yourself acquainted with the methods you can explore more in the world of sensors, IoT, data processing and much more;
+- These signals need to be converted to digital form so that our computers can process and analyse the signals easily;
+- So, I will include some signal processing techniques that I do in my lab along with some additional information to get you started;
+- The motivation behind this is after getting yourself acquainted with the methods you can explore more in the world of sensors, IoT, data processing and much more;
