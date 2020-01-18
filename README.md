@@ -24,7 +24,7 @@ Table of Contents
 
 > Arduino Due has 96 kilo bytes of SRAM and 512 kilo bytes of flash memory.
 
-![](https://images-na.ssl-images-amazon.com/images/I/81A621O1eoL._SL1500_.jpg)
+![](https://rukminim1.flixcart.com/image/352/352/learning-toy/h/t/f/diy-ecraft-arduino-uno-r3-original-imaefmesah8uz4rh.jpeg?q=70)
 
 > Arduino Uno has 2 kilo bytes SRAM and 32 kilo bytes flash memory
 
