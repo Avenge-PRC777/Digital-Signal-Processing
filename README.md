@@ -15,18 +15,23 @@ Table of Contents
 
 * [Digital\-Signal\-Processing](#digital-signal-processing)
 * [About](#about)
+* [Table of Contents](#table-of-contents)
+* [Prerequisites](#prerequisites)
+* [Lab 01](#lab-01)
+
 
 # Prerequisites
 
-- **Arduino Due**, (Commonly used Arduino Uno may not support the processing strength required);
+- **Arduino Due**(Arduino Uno may not support the processing strength required);
 
 ![](https://5.imimg.com/data5/JP/DW/MY-562456/arduino-due-r3-500x500.jpg)
 
-> Arduino Due has 96 kilo bytes of SRAM and 512 kilo bytes of flash memory.
+> Arduino Due has 96 kilo bytes SRAM and 512 kilo bytes flash memory.
 
 ![](https://rukminim1.flixcart.com/image/352/352/learning-toy/h/t/f/diy-ecraft-arduino-uno-r3-original-imaefmesah8uz4rh.jpeg?q=70)
 
 > Arduino Uno has 2 kilo bytes SRAM and 32 kilo bytes flash memory
 
-- **Matlab**(Octave or Python may also serve as an alternative to visualize plots);
-- 
+- **MATLAB**(Octave or Python may also serve as an alternative to visualize plots);
+
+# Lab 01
