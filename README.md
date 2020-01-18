@@ -7,6 +7,16 @@ This repo contains some basic techniques for processing Digital Signals.
 
 - Analog signals are present all around us, may it be **temperature, heart rate or sound**;
 - These signals need to be converted to digital form so that our computers can process and analyse the signals easily;
+
+###Sequence Diagram
+
+```seq
+Andrew->China: Says Hello
+Note right of China: China thinks\nabout it
+China-->Andrew: How are you?
+Andrew->>China: I am good thanks!
+```
+
 - So, I will include some signal processing techniques that I do in my lab along with some additional information to get you started;
 - The motivation behind this is after getting yourself acquainted with the methods you can explore more in the world of **sensors, IoT, data processing and much more**;
 
@@ -39,5 +49,11 @@ Table of Contents
 # Lab 01
 
 ## Filters
+
+- Filter is a system that either allows or rejects specific frequency components in the input to produce an output.
+- There are many types of filters
+
+$$\sin(\alpha)^{\theta}=\sum_{i=0}^{n}(x^i + \cos(f))$$
+
 ## Pole Zero Analysis
 ## Results
