@@ -12,6 +12,9 @@ This repo contains some basic techniques for processing Digital Signals.
 
 Table of Contents
 =================
+[TOCM]
+
+[TOC]
 
 * [Digital\-Signal\-Processing](#digital-signal-processing)
 * [About](#about)
