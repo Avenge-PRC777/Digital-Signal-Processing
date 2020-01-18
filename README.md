@@ -20,7 +20,7 @@ Table of Contents
 
 - **Arduino Due**;
 
-![](https://store-cdn.arduino.cc/usa/catalog/product/cache/1/image/500x375/f8876a31b63532bbba4e781c30024a0a/a/0/a000062_front_1.jpg)
+![](https://techtonics.in/wp-content/uploads/2018/12/TECH3191_b.png)
 
 > Arduino Due has 96 kilo bytes of SRAM and 512 kilo bytes of flash memory.
 
