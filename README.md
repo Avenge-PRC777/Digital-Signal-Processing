@@ -57,13 +57,39 @@ Table of Contents
    + Moving average filter-A low pass filter
    + First order difference filter-A high pass filter
    + Three point central difference filter-A band pass filter
-- Moving Average Filter:
+- **Moving Average Filter**:
 
 ![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/movingav.png?raw=true)
 
+> Input/Output relation
+
 ![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/moveqZ.png?raw=true)
 
+> Converting to Z-Transform
+
 ![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/movtransferfunction.png?raw=true)
+
+> Transfer function equation
+
+- **First order difference filter**:
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/diff.png?raw=true)
+
+> Input/Output relation
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/difftransfer.png?raw=true)
+
+> Transfer function equation
+
+- **Three point central difference filter**:
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/threep.png?raw=true)
+
+> Input/Output relation
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/threepTrans.png?raw=true)
+
+> Transfer function equation
 
 ## Pole Zero Analysis
 ## Results
