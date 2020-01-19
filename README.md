@@ -133,29 +133,29 @@ Table of Contents
 
 - **First order difference filter**:
 
-![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/movingav.png?raw=true)
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/PoleZeroFirstOrder.png?raw=true)
 
 > Pole-Zero plot
 
-![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/moveqZ.png?raw=true)
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/magResFirstOrder.png?raw=true)
 
 > Magnitude Response
 
-![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/movtransferfunction.png?raw=true)
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/PhaseRespFirstOrder.png?raw=true)
 
 > Phase Response
 
 - **Three point central difference filter**:
 
-![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/movingav.png?raw=true)
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/PoleZeroThree.png?raw=true)
 
 > Pole-Zero plot
 
-![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/moveqZ.png?raw=true)
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/MagResThree.png?raw=true)
 
 > Magnitude Response
 
-![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/movtransferfunction.png?raw=true)
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/PhaseRespThree.png?raw=true)
 
 > Phase Response
 
