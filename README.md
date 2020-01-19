@@ -46,13 +46,8 @@ Table of Contents
 ## Filters
 
 - Filter is a system that either allows or rejects specific frequency components in the input to produce an output.
-- There are many types of filters
-
-{
-        tex  : true
-    }
-
-$$y[n]=\sum_{k=0}^{L-1}(x[n-k])$$
+- There are many types of filters:
+- > Low Pass Filter
 
 ## Pole Zero Analysis
 ## Results
