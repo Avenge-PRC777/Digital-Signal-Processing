@@ -48,6 +48,17 @@ Table of Contents
 - Filter is a system that either allows or rejects specific frequency components in the input to produce an output.
 - There are many types of filters:
    + Low Pass Filter
+   + High Pass Filter
+   + All Pass Filter
+   + Band Pass Filter
+   + Band Stop Filter
+   + Notch Filter
+- The three filters in focus here are:
+   + Moving average filter-A low pass filter
+   + First order difference filter-A high pass filter
+   + Three point central difference filter-A band pass filter
+- Moving Average Filter:
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/movingav.png?raw=true)
 
 ## Pole Zero Analysis
 ## Results
