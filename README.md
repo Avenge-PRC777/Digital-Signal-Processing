@@ -92,4 +92,73 @@ Table of Contents
 > Transfer function equation
 
 ## Pole Zero Analysis
+
+- **Moving Average Filter**:
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/PoleZeroLTwo.png?raw=true)
+
+> Pole-Zero plot for L=2
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/magResMALTwo.png?raw=true)
+
+> Magnitude Response
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/PhaseRespMALTwo.png?raw=true)
+
+> Phase Response
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/PoleZeroL8.png?raw=true)
+
+> Pole-Zero plot for L=8
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/magResMAL8.png?raw=true)
+
+> Magnitude Response
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/PhaseRespMAL8.png?raw=true)
+
+> Phase Response
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/PoleZeroL100.png?raw=true)
+
+> Pole-Zero plot for L=100
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/magResMAL100.png?raw=true)
+
+> Magnitude Response
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/PhaseRespMAL100.png?raw=true)
+
+> Phase Response
+
+- **First order difference filter**:
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/movingav.png?raw=true)
+
+> Pole-Zero plot
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/moveqZ.png?raw=true)
+
+> Magnitude Response
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/movtransferfunction.png?raw=true)
+
+> Phase Response
+
+- **Three point central difference filter**:
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/movingav.png?raw=true)
+
+> Pole-Zero plot
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/moveqZ.png?raw=true)
+
+> Magnitude Response
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/movtransferfunction.png?raw=true)
+
+> Phase Response
+
 ## Results
+
+- The given data set is that of ppg signal of 1000 sample points and sampled at 100Hz;
