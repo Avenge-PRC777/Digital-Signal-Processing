@@ -162,3 +162,38 @@ Table of Contents
 ## Results
 
 - The given data set is that of ppg signal of 1000 sample points and sampled at 100Hz;
+- **Moving average filter results**:
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/L2.png?raw=true)
+
+> L=2; Blue-PPG signal, Red-Moving averaged ppg signal
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/L8.png?raw=true)
+
+> L=8; Blue-PPG signal, Red-Moving averaged ppg signal
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/L100.png?raw=true)
+
+> L=100; Blue-PPG signal, Red-Moving averaged ppg signal
+
+- **High Pass Filters**:
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/FirstOrderOutput.png?raw=true)
+
+> Blue-PPG signal, Red-Moving averaged ppg signal, Green- First Order Difference
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/ThreePoint.png?raw=true)
+
+> Blue-PPG signal, Red-Moving averaged ppg signal, Green- Three Point Difference
+
+- **Removing Baseline Drift**:
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/baselinedrift.png?raw=true)
+
+> Blue-PPG signal, Red-Noide(first order difference), Green- PPG Signal without noise, Yellow- Moving averaged ppg signal, Purple- Baseline component, Indigo- PPG signal without baseline component
+
+- **Moving average on difference operator**:
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/maondifference.png?raw=true)
+
+> Blue-PPG signal, Red-Noide(first order difference), Green- Moving averaged first order difference
