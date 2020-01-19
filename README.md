@@ -47,7 +47,7 @@ Table of Contents
 
 - Filter is a system that either allows or rejects specific frequency components in the input to produce an output.
 - There are many types of filters:
-- > Low Pass Filter
+-- Low Pass Filter
 
 ## Pole Zero Analysis
 ## Results
