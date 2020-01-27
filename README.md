@@ -431,13 +431,13 @@ This lab is based on applying autocorrelation function to PPG signal and Speech 
   + From autocorrelation function we need to find the first zero crossing location;
   + From the first zero crossing location we need to find the location of the first maximum;
   + Doing so tells us after how much delay(shifting) there will be a strong similarity(hence periodicity);
-  + Period(or Pitch period) is calculated as (True location of second maximum)/(Sampling frequency);
+  + Period(or Pitch period) is calculated as (**True location of second maximum)/(Sampling frequency**);
 
 ## Autocorrelation on PPG Signal
 - PPG stands for Photoplethysmogram, where 'plethys' means measuring volume of an organ;
 - Hence, PPG tries to capture heart rate information by measuring how much light is absorbed at the tips of our fingers;
 - The heart rate obtained is called pulse period;
-  + Pulse period is defined as (60/pitch period) where pitch period is determined by autocorrelation technique;
+  + Pulse period is defined as (**60/pitch period**) where pitch period is determined by autocorrelation technique;
   + It is the resting pulse period and is measured in beats per minute(BPM);
   + Dataset of PPG signal contains 2000 samples sampled at 100Hz
 
@@ -454,7 +454,7 @@ This lab is based on applying autocorrelation function to PPG signal and Speech 
   + For males, it is in range 65 to 260 Hz(approximately);
   + For females, it is in range 100 to 525 Hz(approximately);
 - Pitch frequency can be calculated using autocorrelation as mentioned above;
-  + Pitch frequency is found as (1/Pitch period);
+  + Pitch frequency is found as (**1/Pitch period**);
 
 ![](https://raw.githubusercontent.com/Avenge-PRC777/Digital-Signal-Processing/master/LAB_03/images/Speech.gif)
 
