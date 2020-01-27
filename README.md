@@ -416,6 +416,7 @@ This lab is based on applying autocorrelation function to PPG signal and Speech 
   + Autocorrelation function is a function of delay;
   + It is an even signal;
   + It has maximum at zero delay;
+  + It ranges from -1 to 1 and slowly dies out to 0 when delay is same as the length of the signal;
 
 - Applications of autocorrelation include:
   
@@ -423,12 +424,20 @@ This lab is based on applying autocorrelation function to PPG signal and Speech 
   + Detection of missing fundamental frequency in signal;
   + Removal of white noise;
 
+- Detection of periodicity in signal:
+  
+  + From autocorrelation function we need to find the first zero crossing location;
+  + From the first zero crossing location we need to find the location of the first maximum;
+  + Doing so tells us after how much delay(shifting) there will be a strong similarity(hence periodicity);
+  + Period(or Pitch period) is calculated as (True location of second maximum)/(Sampling frequency);
+
 ## Autocorrelation on PPG Signal
 - PPG stands for Photoplethysmogram, where 'plethys' means measuring volume of an organ;
 - Hence, PPG tries to capture heart rate information by measuring how much light is absorbed at the tips of our fingers;
 - The heart rate obtained is called pulse period;
   + Pulse period is defined as (60/pitch period) where pitch period is determined by autocorrelation technique;
   + It is the resting pulse period and is measured in beats per minute(BPM);
+  + Dataset of PPG signal contains 2000 samples sampled at 100Hz
 
 ![](https://raw.githubusercontent.com/Avenge-PRC777/Digital-Signal-Processing/master/LAB_03/images/PPG.gif)
 
@@ -436,8 +445,21 @@ This lab is based on applying autocorrelation function to PPG signal and Speech 
 
 ![](https://raw.githubusercontent.com/Avenge-PRC777/Digital-Signal-Processing/master/LAB_03/images/PPG.png)
 
-> Blue-PPG signal;Red-Moving Averaged PPG Signal;Green- Autocorrelation signal
+> Obtained results for pulse period
 
 ## Autocorrelation on Speech Signal
+- Speech signal is produced by our voice box;
+  + For males, it is in range 65 to 260 Hz(approximately);
+  + For females, it is in range 100 to 525 Hz(approximately);
+- Pitch frequency can be calculated using autocorrelation as mentioned above;
+  + Pitch frequency is found as (1/Pitch period);
+
+![](https://raw.githubusercontent.com/Avenge-PRC777/Digital-Signal-Processing/master/LAB_03/images/Speech.gif)
+
+> Blue-PPG signal;Red-Moving Averaged PPG Signal;Green- Autocorrelation signal
+
+![](https://raw.githubusercontent.com/Avenge-PRC777/Digital-Signal-Processing/master/LAB_03/images/Speech.png)
+
+> Obtained results for pitch frequency
 
 >>>>>>> a75e612079e71da393283e09d2d20d23981aa151
