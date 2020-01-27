@@ -4,18 +4,6 @@ This repo contains some basic techniques for processing Digital Signals.
 
 ![](https://media.cheggcdn.com/study/026/0260950c-90d8-4fba-8889-946957400f9a/elec-6-img-1.png)
 
-# About
-
-- Analog signals are present all around us, may it be **temperature, heart rate or sound**;
-- These signals need to be converted to digital form so that our computers can process and analyse the signals easily;
-
-![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/encoding.png?raw=true)
-
-![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/decoding.png?raw=true)
-
-- So, I will include some signal processing techniques that I do in my lab along with some additional information to get you started;
-- The motivation behind this is after getting yourself acquainted with the methods you can explore more in the world of **sensors, IoT, data processing and much more**;
-
 Table of Contents
 =================
 
@@ -31,6 +19,18 @@ Table of Contents
   * [Autocorrelation](#autocorrelation)
   * [Autocorrelation on PPG Signal](#autocorrelation-on-ppg-signal)
   * [Autocorrelation on Speech Signal](#autocorrelation-on-speech-signal)
+
+# About
+
+- Analog signals are present all around us, may it be **temperature, heart rate or sound**;
+- These signals need to be converted to digital form so that our computers can process and analyse the signals easily;
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/encoding.png?raw=true)
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/decoding.png?raw=true)
+
+- So, I will include some signal processing techniques that I do in my lab along with some additional information to get you started;
+- The motivation behind this is after getting yourself acquainted with the methods you can explore more in the world of **sensors, IoT, data processing and much more**;
 
 # Prerequisites
 
@@ -412,6 +412,8 @@ This lab is based on applying autocorrelation function to PPG signal and Speech 
 ![](https://raw.githubusercontent.com/Avenge-PRC777/Digital-Signal-Processing/master/LAB_03/images/autocorrelation.jpeg)
 
 > Autocorrelation equation for continuous time domain
+
+- Properties of autocorrelation signal:
 
   + Autocorrelation function is a function of delay;
   + It is an even signal;
