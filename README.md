@@ -27,7 +27,7 @@ Table of Contents
   * [Filters](#filters)
   * [Pole Zero Analysis](#pole-zero-analysis)
   * [Results](#results)
-* [Lab 02](#lab-02)
+* [Lab 03](#lab-03)
   * [Autocorrelation](#autocorrelation)
   * [Autocorrelation on PPG Signal](#autocorrelation-on-ppg-signal)
   * [Autocorrelation on Speech Signal](#autocorrelation-on-speech-signal)
@@ -403,11 +403,40 @@ Table of Contents
 
 > Blue-PPG signal, Red-Noide(first order difference), Green- Moving averaged first order difference
 
-# Lab 02
+# Lab 03
+This lab is based on applying autocorrelation function to PPG signal and Speech signal.
 
 ## Autocorrelation
+- Autocorrelation is defined as the correlation of signal with a delayed copy of itself;
+
+![](https://raw.githubusercontent.com/Avenge-PRC777/Digital-Signal-Processing/master/LAB_03/images/autocorrelation.jpeg)
+
+> Autocorrelation equation for continuous time domain
+
+  + Autocorrelation function is a function of delay;
+  + It is an even signal;
+  + It has maximum at zero delay;
+
+- Applications of autocorrelation include:
+  
+  + Detection of periodicity in a signal obscured by noise;
+  + Detection of missing fundamental frequency in signal;
+  + Removal of white noise;
 
 ## Autocorrelation on PPG Signal
+- PPG stands for Photoplethysmogram, where 'plethys' means measuring volume of an organ;
+- Hence, PPG tries to capture heart rate information by measuring how much light is absorbed at the tips of our fingers;
+- The heart rate obtained is called pulse period;
+  + Pulse period is defined as (60/pitch period) where pitch period is determined by autocorrelation technique;
+  + It is the resting pulse period and is measured in beats per minute(BPM);
+
+![](https://raw.githubusercontent.com/Avenge-PRC777/Digital-Signal-Processing/master/LAB_03/images/PPG.gif)
+
+> Blue-PPG signal;Red-Moving Averaged PPG Signal;Green- Autocorrelation signal
+
+![](https://raw.githubusercontent.com/Avenge-PRC777/Digital-Signal-Processing/master/LAB_03/images/PPG.png)
+
+> Blue-PPG signal;Red-Moving Averaged PPG Signal;Green- Autocorrelation signal
 
 ## Autocorrelation on Speech Signal
 
