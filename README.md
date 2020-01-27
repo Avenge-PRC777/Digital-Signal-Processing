@@ -28,9 +28,9 @@ Table of Contents
   * [Pole Zero Analysis](#pole-zero-analysis)
   * [Results](#results)
 * [Lab 02](#lab-02)
-  * [Autocorrelation]
-  * [Autocorrelation on PPG Signal]
-  * [Autocorrelation on Speech Signal]
+  * [Autocorrelation](#autocorrelation)
+  * [Autocorrelation on PPG Signal](#autocorrelation-on-ppg-signal)
+  * [Autocorrelation on Speech Signal](#autocorrelation-on-speech-signal)
 
 # Prerequisites
 
