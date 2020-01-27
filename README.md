@@ -27,6 +27,10 @@ Table of Contents
   * [Filters](#filters)
   * [Pole Zero Analysis](#pole-zero-analysis)
   * [Results](#results)
+* [Lab 02](#lab-02)
+  * [Autocorrelation]
+  * [Autocorrelation on PPG Signal]
+  * [Autocorrelation on Speech Signal]
 
 # Prerequisites
 
@@ -398,4 +402,13 @@ Table of Contents
 ![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_01/images/maondifference.png?raw=true)
 
 > Blue-PPG signal, Red-Noide(first order difference), Green- Moving averaged first order difference
+
+# Lab 02
+
+## Autocorrelation
+
+## Autocorrelation on PPG Signal
+
+## Autocorrelation on Speech Signal
+
 >>>>>>> a75e612079e71da393283e09d2d20d23981aa151
