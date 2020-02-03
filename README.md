@@ -479,10 +479,44 @@ This lab is based on applying autocorrelation function to PPG signal and Speech 
 - But the spectrum of DTFT is continuous and needs to be sampled;
 - So, sampling in frequency domain leads to Discrete Fourier Transform(DFT);
 
-![]()
+![](https://raw.githubusercontent.com/Avenge-PRC777/Digital-Signal-Processing/master/LAB_04/images/dtftformula.png)
+
+> Discrete time fourier transform formula
+
+![](https://raw.githubusercontent.com/Avenge-PRC777/Digital-Signal-Processing/master/LAB_04/images/dftformula.png)
+
+> Discrete fourier transform formula
 
 ## Finding Pulse Period with DFT
 
+- First, one moving averages the signal to smoothen it and remove high frequency noises;
+- Then, one takes the DFT of the signal and finds the k index for which magnitude response is maximum;
+- The first peak is taken in magnitude response;
+- The corresponding frequency for a k index is **(kindex.sampling frequency)/(length of signal)**;
+- The pulse rate is obtained as **(60 . pitch frequency[as computed above])**;
+
+![](https://raw.githubusercontent.com/Avenge-PRC777/Digital-Signal-Processing/master/LAB_04/images/DFT.gif)
+
+> DFT Spectrum showing periodicity(repeatitions)
+
+![](https://raw.githubusercontent.com/Avenge-PRC777/Digital-Signal-Processing/master/LAB_04/images/DFTspectraNOFILTER.png)
+
+> DFT spectrum without moving average filter
+
+![](https://raw.githubusercontent.com/Avenge-PRC777/Digital-Signal-Processing/master/LAB_04/images/DFTspectraMA.png)
+
+> DFT spectrum with moving average filter
+
 ## Results
+
+![](https://raw.githubusercontent.com/Avenge-PRC777/Digital-Signal-Processing/master/LAB_04/images/WithACF.png)
+
+> Pulse rate found with Autocorrelation function
+
+![](https://raw.githubusercontent.com/Avenge-PRC777/Digital-Signal-Processing/master/LAB_04/images/WithDFT.png)
+
+> Pulse rate found with DFT method
+
+- Error=**(80-71.43)/71.43=0.1199=11.99%**
 
 >>>>>>> a75e612079e71da393283e09d2d20d23981aa151
