@@ -19,6 +19,11 @@ Table of Contents
   * [Autocorrelation](#autocorrelation)
   * [Autocorrelation on PPG Signal](#autocorrelation-on-ppg-signal)
   * [Autocorrelation on Speech Signal](#autocorrelation-on-speech-signal)
+* [Lab 04](#lab-04)
+  * [Discrete Fourier Transform](#discrete-fourier-transform)
+  * [Finding Pulse Period with DFT](#finding-pulse-period-with-DFT)
+  * [Results](#results)
+
 
 # About
 
@@ -463,5 +468,13 @@ This lab is based on applying autocorrelation function to PPG signal and Speech 
 ![](https://raw.githubusercontent.com/Avenge-PRC777/Digital-Signal-Processing/master/LAB_03/images/Speech.png)
 
 > Obtained results for pitch frequency
+
+# Lab 04
+
+## Discrete Fourier Transform
+
+## Finding Pulse Period with DFT
+
+## Results
 
 >>>>>>> a75e612079e71da393283e09d2d20d23981aa151
