@@ -59,7 +59,7 @@ void setup() {
         dftReal[k]=sumReal;
         dftImag[k]=sumImag;
       }
-
+    
       for(int k=0;k<(N-1);k++)
       {
         float xy=sqrt((dftReal[k]*dftReal[k])+(dftImag[k]*dftImag[k]));
@@ -71,6 +71,7 @@ void setup() {
         }
         Serial.print("Frequency for maximum magnitude spectrum is ");Serial.print((kindex*Fs)/N);Serial.println(" Hz");
         Serial.print("Pulse period is ");Serial.print(60*(kindex*Fs)/N);Serial.println(" BPM");
+        
 }
 
 void loop() {
