@@ -473,6 +473,14 @@ This lab is based on applying autocorrelation function to PPG signal and Speech 
 
 ## Discrete Fourier Transform
 
+- Real world signals are analog signals that is continuous in time, hence infinite values;
+- Since, computer cannot handle infinite values, it needs to be sampled in time domain;
+- To get frequency spectrum of sampled signal, we perform Discrete Time Fourier Transform(DTFT);
+- But the spectrum of DTFT is continuous and needs to be sampled;
+- So, sampling in frequency domain leads to Discrete Fourier Transform(DFT);
+
+![]()
+
 ## Finding Pulse Period with DFT
 
 ## Results
