@@ -590,8 +590,52 @@ void loop() {
 }
 ```
 
-``` MATLAB
-y=load()
+``` Matlab
+y=load('exp4.mat'); %Loading data
+x3=y.x3;
+x3=x3';
+[r,c]=size(x3); % x3 is signal and r is length of signal
+
+%moving average
+mov=zeros(r,1);
+l=7;
+for k=1:r-l
+    sum=0.0;
+    for z=k:k+l
+        sum=sum+x3(z);
+    end
+    mov(k)=sum/l;
+end %Performed moving average
+figure(1);
+subplot(1,2,1); 
+
+% Constructing DFT Matrix
+dftmatrix=ones(r,r);
+for k=2:r
+    for z=k:r
+        cvar=exp(-(2*pi*1j*(k-1)*(z-1))/r);
+        dftmatrix(k,z)=cvar;
+        if(k~=z)
+            dftmatrix(z,k)=dftmatrix(k,z);
+        end
+    end
+end
+
+%%DFT multiplication
+fs=25;%25Hz sampling frequency;
+
+xkwithoutMA=dftmatrix*x3; %Multiplying signal with dft matrix
+xkwithoutMA=abs(xkwithoutMA); %Taking magnitude values
+xk=dftmatrix*mov;
+xk=abs(xk);
+[~,kindex]=max(xk(1:r/2)); %Finding 1st maximum value's location
+kindex=kindex-1;
+pitchfreq=(kindex*fs)/r; %Calculating pitch frequency
+display("Pitch frequency is with Moving Average of window "+l+" is "+60*pitchfreq+" BPM");
+[~,kindex]=max(xkwithoutMA(1:r/2));
+kindex=kindex-1;
+pitchfreq=(kindex*fs)/r;
+display("Pitch frequency is without Moving Average is "+60*pitchfreq+" BPM");
 ```
 
 ## Results
