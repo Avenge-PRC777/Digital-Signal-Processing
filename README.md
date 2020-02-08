@@ -550,9 +550,9 @@ void setup() {
          dftmatrixImagPart[n][k]=dftmatrixImagPart[k][n];
           }
         }
-      }
+      } //Finding DFT Matrix
       
-     doMovingAverage(sig,movavg,10,75);
+     doMovingAverage(sig,movavg,10,75); //doing moving average which is available in helper functions file
      
      for(int k=0;k<N;k++)
      {
@@ -564,7 +564,7 @@ void setup() {
         }
         dftReal[k]=sumReal;
         dftImag[k]=sumImag;
-      }
+      }// Multiplying dft matrix with cleaned signal
     
       for(int k=0;k<(N-1);k++)
       {
@@ -574,7 +574,7 @@ void setup() {
           maxm=xy;
           kindex=k;
           }
-        }
+        } //Finding 1st value of k index for maximum magnitude
         Serial.print("Frequency for maximum magnitude spectrum is ");Serial.print((kindex*Fs)/N);Serial.println(" Hz");
         Serial.print("Pulse period is ");Serial.print(60*(kindex*Fs)/N);Serial.println(" BPM");
         
@@ -583,7 +583,7 @@ void setup() {
 void loop() {
   for(int k=0;k<(N-1);k++)
   {
-    float xy=sqrt((dftReal[k]*dftReal[k])+(dftImag[k]*dftImag[k]));
+    float xy=sqrt((dftReal[k]*dftReal[k])+(dftImag[k]*dftImag[k])); //Printing Spectrum
     Serial.print(xy);
         Serial.println(',');
     }
