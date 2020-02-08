@@ -651,11 +651,11 @@ display("Pitch frequency is without Moving Average is "+60*pitchfreq+" BPM");
 
 > DFT in MATLAB
 
-![]((https://raw.githubusercontent.com/Avenge-PRC777/Digital-Signal-Processing/master/LAB_04/images/matspectrum.jpg)
+![](https://raw.githubusercontent.com/Avenge-PRC777/Digital-Signal-Processing/master/LAB_04/images/matspectrum.jpg)
 
 > Pulse rate found in MATLAB
 
-![]((https://raw.githubusercontent.com/Avenge-PRC777/Digital-Signal-Processing/master/LAB_04/images/matresult.png)
+![](https://raw.githubusercontent.com/Avenge-PRC777/Digital-Signal-Processing/master/LAB_04/images/matresult.png)
 
 > Pulse rate found with Autocorrelation function
 
