@@ -590,6 +590,10 @@ void loop() {
 }
 ```
 
+``` MATLAB
+y=load()
+```
+
 ## Results
 
 ![](https://raw.githubusercontent.com/Avenge-PRC777/Digital-Signal-Processing/master/LAB_04/images/WithACF.png)
