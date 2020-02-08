@@ -507,6 +507,89 @@ This lab is based on applying autocorrelation function to PPG signal and Speech 
 
 > DFT spectrum with moving average filter
 
+``` cpp
+const int L=75;
+const int N=75;
+float pi=3.141593522;
+float sig[75]={-87.1730763754109}; //75 samples
+float Fs=25;//25 Hz, sampling frequency
+float* movavg=new float[75]; //moving average array
+int window=20; //moving average window
+float* dftReal=new float[75]; //array to store real values of dft of signal
+float* dftImag=new float[75]; //array to store imaginary values of dft of signal
+float** dftmatrixRealPart=new float*[75]; //array to store real values of dft MATRIX of signal
+float** dftmatrixImagPart=new float*[75]; //array to store real values of dft MATRIX of signal
+float maxm=-1000;
+int kindex=0;
+
+
+//Frequency is kFs/L;
+void setup() {
+    Serial.begin(9600);
+    for(int i=0;i<75;i++)
+    {
+     dftmatrixRealPart[i]=new float[75];
+     dftmatrixImagPart[i]=new float[75];
+      }//2D Array initialization
+    
+    for(int n=0;n<L;n++)
+    {
+      dftmatrixRealPart[0][n]=1;dftmatrixRealPart[n][0]=1;//This block assumes N==L so loop is equal for column and row
+      dftmatrixImagPart[0][n]=0;dftmatrixImagPart[n][0]=0;
+      }//Inititalizing all values of 1st row and 1st column of real dft matrix to 1 and of imaginary dft matrix to 0
+      
+    for(int k=1;k<N-1;k++)
+    {
+      for(int n=k;n<L;n++)
+      {
+        dftmatrixRealPart[k][n]=cos((2*pi*k*n)/N);
+        dftmatrixImagPart[k][n]=sin((2*pi*k*n)/N)*(-1);
+        if(n!=k)
+        {
+         dftmatrixRealPart[n][k]=dftmatrixRealPart[k][n];
+         dftmatrixImagPart[n][k]=dftmatrixImagPart[k][n];
+          }
+        }
+      }
+      
+     doMovingAverage(sig,movavg,10,75);
+     
+     for(int k=0;k<N;k++)
+     {
+      float sumReal=0,sumImag=0;
+      for(int n=0;n<L;n++)
+      {
+        sumReal+=(dftmatrixRealPart[k][n]*movavg[n]);
+        sumImag+=(dftmatrixImagPart[k][n]*movavg[n]);
+        }
+        dftReal[k]=sumReal;
+        dftImag[k]=sumImag;
+      }
+    
+      for(int k=0;k<(N-1);k++)
+      {
+        float xy=sqrt((dftReal[k]*dftReal[k])+(dftImag[k]*dftImag[k]));
+        if(xy>maxm&&(k<N/2))
+        {
+          maxm=xy;
+          kindex=k;
+          }
+        }
+        Serial.print("Frequency for maximum magnitude spectrum is ");Serial.print((kindex*Fs)/N);Serial.println(" Hz");
+        Serial.print("Pulse period is ");Serial.print(60*(kindex*Fs)/N);Serial.println(" BPM");
+        
+}
+
+void loop() {
+  for(int k=0;k<(N-1);k++)
+  {
+    float xy=sqrt((dftReal[k]*dftReal[k])+(dftImag[k]*dftImag[k]));
+    Serial.print(xy);
+        Serial.println(',');
+    }
+}
+```
+
 ## Results
 
 ![](https://raw.githubusercontent.com/Avenge-PRC777/Digital-Signal-Processing/master/LAB_04/images/WithACF.png)
