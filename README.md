@@ -507,6 +507,8 @@ This lab is based on applying autocorrelation function to PPG signal and Speech 
 
 > DFT spectrum with moving average filter
 
+> ARDUINO Implementation Code
+
 ``` cpp
 const int L=75;
 const int N=75;
@@ -589,6 +591,7 @@ void loop() {
     }
 }
 ```
+> MATLAB Code
 
 ``` Matlab
 y=load('exp4.mat'); %Loading data
@@ -640,7 +643,19 @@ display("Pitch frequency is without Moving Average is "+60*pitchfreq+" BPM");
 
 ## Results
 
-![](https://raw.githubusercontent.com/Avenge-PRC777/Digital-Signal-Processing/master/LAB_04/images/WithACF.png)
+![](https://raw.githubusercontent.com/Avenge-PRC777/Digital-Signal-Processing/master/LAB_04/images/matsignal.png)
+
+> Signal Waveform
+
+![](https://raw.githubusercontent.com/Avenge-PRC777/Digital-Signal-Processing/master/LAB_04/images/matsignal.jpg)
+
+> DFT in MATLAB
+
+![]((https://raw.githubusercontent.com/Avenge-PRC777/Digital-Signal-Processing/master/LAB_04/images/matspectrum.jpg)
+
+> Pulse rate found in MATLAB
+
+![]((https://raw.githubusercontent.com/Avenge-PRC777/Digital-Signal-Processing/master/LAB_04/images/matresult.png)
 
 > Pulse rate found with Autocorrelation function
 
