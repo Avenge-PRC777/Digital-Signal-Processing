@@ -674,7 +674,6 @@ display("Pitch frequency is without Moving Average is "+60*pitchfreq+" BPM");
 - Here we use ArduinoFFT library to get the pulse rate and verify the results;
 - FFT does the work in O(NlogN) while DFT does it in O(N^2)
 - FFT can be implemented by Decimation in Frequency/Time(DIF/DIT) techniques;
-- Notes on DFT FFT- 
 
 ``` cpp
 #include "arduinoFFT.h"
