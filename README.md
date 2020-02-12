@@ -731,10 +731,128 @@ void setup()
 ```
 > Code to implement FFT library
 
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_05/images/spectrum.png)
+
+> Spectrum obtained by FFT
+
 ![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_05/images/window5.png)
 
 ![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_05/images/window10.png)
 
+> Pulse rate results obtained by FFT
+
 ## Extracting Respiration rate
+
+- Raw ppg data contains respiratory information too;
+- While ppg frequency lies between 0.5 to 5 Hz, respiratory frequency lies between 0.05 to 0.5 Hz;
+- Hence, FFT can be used to zero out non respiratory components;
+
+``` Matlab
+y=load('ppgwithRespiration_25hz_30seconds.mat');
+x=y.xppg;
+x=x';
+[l,~]=size(x);
+myfft=fft(x,l);
+figure(1);
+subplot(1,2,1);
+plot(x);axis tight;grid on;title('Input Signal');xlabel('Time');ylabel('Amplitude');
+subplot(1,2,2);
+plot(abs(myfft));axis tight;grid on;title('Frequency Spectrum');xlabel('Frequency');ylabel('Magnitude');
+
+%Getting respiratory part only
+myfft(1)=0;
+myfft(17:l,:)=0; %Setting non respiratory components to zero
+xapp=ifft(myfft,l);
+[~,loc]=max(myfft);
+display("Respiratory rate in Breaths per minute: ");display((loc-1)*25*60/l);
+figure(2);
+subplot(1,2,1);
+plot(abs(xapp));axis tight;grid on;title('Respiratory Signal only');xlabel('Time');ylabel('Amplitude');
+subplot(1,2,2);
+plot(abs(myfft));axis tight;grid on;title('Frequency Spectrum');xlabel('Frequency');ylabel('Magnitude');
+```
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_05/images/octaveinp.png)
+
+> Input Signal and Spectrum
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_05/images/octaveresp.png)
+
+> Obtained respiratory signal
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_05/images/octaverr.png)
+
+> Respiration rate in Matlab/Octave
+
+``` cpp
+#include "arduinoFFT.h"
+
+arduinoFFT FFT = arduinoFFT(); /* Create FFT object */
+/*
+These values can be changed in order to evaluate the functions
+*/
+const uint16_t samp2=750;
+const uint16_t samples = 1024; //This value MUST ALWAYS be a power of 2
+const double samplingFrequency = 300;
+/*
+These are the input and output vectors
+Input vectors receive computed results from FFT
+*/
+double vRealAll[samp2]={-293.993316,..data};
+double vReal[samples];
+double vRealMA[samples];
+double sig[samples];
+double vImag[samples]={0};
+int window=1;
+double maxm=-1000;int kindex=0;
+
+void setup()
+{
+  Serial.begin(9600);
+    doMovingAverage(vReal,vRealMA,samples,window);
+
+  FFT.Compute(vRealMA, vImag, samples, FFT_FORWARD); /* Compute FFT */
+  double* myfft=new double[samples];
+  for(int i=0;i<samples;i++)
+  {
+    myfft[i]=magn(i);
+    }
+    
+   window=100;
+  doMovingAverage(myfft,myfft,samples,window);
+  //For getting correct rate it is important to moving average the signal in frequency domain also
+  for(int i=0;i<16;i++)
+  {
+    Serial.print(myfft[i]);
+    Serial.println(',');
+    }
+  for(int k=0;k<samples;k++)
+  {
+    if(!(k>=1&&k<=15))
+    {
+      vRealMA[k]=0;vImag[k]=0;
+      }
+      else
+      {
+        if(myfft[k]>maxm)
+        {
+          maxm=myfft[k];kindex=k;
+          }
+        }
+    }
+    Serial.print("Respiratory rate is: ");Serial.print(60*(kindex*samplingFrequency)/samples);Serial.println(" breaths per minute");
+    FFT.Compute(vRealMA, vImag, samples,FFT_REVERSE); /* Compute Inverse FFT */
+}
+```
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_05/images/Respiratoryonly.gif)
+
+> Extracted respiratory signal
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_05/images/ppgonly.gif)
+
+> PPG Signal only(Respiratory components removed)
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_05/images/RespRateArduino.png)
+
+> Respiration rate in arduino
 
 >>>>>>> a75e612079e71da393283e09d2d20d23981aa151
