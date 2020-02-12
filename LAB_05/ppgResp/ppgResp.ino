@@ -40,6 +40,18 @@ void setup()
     doMovingAverage(vReal,vRealMA,samples,window);
 
   FFT.Compute(vRealMA, vImag, samples, FFT_FORWARD); /* Compute FFT */
+  double* myfft=new double[samples];
+  for(int i=0;i<samples;i++)
+  {
+    myfft[i]=magn(i);
+    }
+   window=100;
+  doMovingAverage(myfft,myfft,samples,window);
+  for(int i=0;i<16;i++)
+  {
+    Serial.print(myfft[i]);
+    Serial.println(',');
+    }
   for(int k=0;k<samples;k++)
   {
     if(!(k>=1&&k<=15))
@@ -48,14 +60,14 @@ void setup()
       }
       else
       {
-        if(magn(k)>maxm)
+        if(myfft[k]>maxm)
         {
-          maxm=magn(k);kindex=k;
+          maxm=myfft[k];kindex=k;
           }
         }
     }
-    Serial.print("Respiratory rate is: ");Serial.println((kindex*samplingFrequency)/samples);
-  FFT.Compute(vRealMA, vImag, samples,FFT_REVERSE); /* Compute IFFT */
+    Serial.print("Respiratory rate is: ");Serial.print(60*(kindex*samplingFrequency)/samples);Serial.println(" breaths per minute");
+    FFT.Compute(vRealMA, vImag, samples,FFT_REVERSE); /* Compute IFFT */
   
 }
 
@@ -64,7 +76,7 @@ double magn(int i)
   return sqrt(vRealMA[i]*vRealMA[i]+vImag[i]*vImag[i]);
   }
 void printF(){
-  for(int i=0;i<samples;i++)
+  for(int i=0;i<16;i++)
   {
     Serial.print(magn(i));
     Serial.println(',');
@@ -74,5 +86,4 @@ void printF(){
   
 void loop()
 {
-  printF();
 }
