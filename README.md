@@ -670,6 +670,70 @@ display("Pitch frequency is without Moving Average is "+60*pitchfreq+" BPM");
 # Lab 05
 
 ## Fast Fourier Transform
+- In last lab, using DFT we found the pulse rate to be 80 beats per minute;
+- Here we use ArduinoFFT library to get the pulse rate and verify the results;
+- FFT does the work in O(NlogN) while DFT does it in O(N^2)
+- FFT can be implemented by Decimation in Frequency/Time(DIF/DIT) techniques;
+- Notes on DFT FFT- 
+
+``` cpp
+#include "arduinoFFT.h"
+
+arduinoFFT FFT = arduinoFFT(); /* Create FFT object */
+/*
+These values can be changed in order to evaluate the functions
+*/
+const uint16_t samples = 128; //This value MUST ALWAYS be a power of 2
+const double samplingFrequency = 25;
+/*
+These are the input and output vectors
+Input vectors receive computed results from FFT
+*/
+double vReal[samples]={-87.173076375410917...data};
+double vImag[samples]={0};
+double maxim=-10000.0;int kindex=0;
+int window=10;double sum=0;
+double vRealMA[samples];
+
+void setup()
+{
+  Serial.begin(9600);
+  for(int i=75;i<128;i++)
+    vReal[i]=0;
+
+    //MOVING AVERAGE
+  for(int i=(samples-window+1);i<samples;i++)
+  vRealMA[i]=0;
+  for(int i=0;i<(samples-window+1);i++)
+ {
+  float sum=0;
+  for(int j=i;j<window+i;j++)
+  {
+   sum+=vReal[j];
+   }
+   vRealMA[i]=sum/window;
+  }
+    
+  FFT.Windowing(vRealMA, samples, FFT_WIN_TYP_HAMMING, FFT_FORWARD);  /* Weigh data */
+  FFT.Compute(vRealMA, vImag, samples, FFT_FORWARD); /* Compute FFT */
+  for(int i=0;i<samples;i++)
+  {
+    double temp=sqrt(vRealMA[i]*vRealMA[i]+vImag[i]+vImag[i]);
+    if((temp>maxim)&&(i<samples/2))
+    {
+      maxim=temp;kindex=i;
+      }
+    Serial.print(temp);
+    Serial.println(',');
+  }
+  Serial.print("Pulse rate using FFT Library and with moving average window ");Serial.print(window);Serial.print(" is: ");Serial.print((60*kindex*samplingFrequency)/samples);Serial.println(" BPM");
+}
+```
+> Code to implement FFT library
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_05/images/window5.png)
+
+![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_05/images/window10.png)
 
 ## Extracting Respiration rate
 
