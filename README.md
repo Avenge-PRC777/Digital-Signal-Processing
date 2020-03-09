@@ -26,6 +26,7 @@ Table of Contents
 * [Lab 05](#lab-05)
   * [Fast Fourier Transform](#fast-fourier-transform)
   * [Extracting Respiration rate](#extracting-respiration-rate)
+* [Lab 06](#lab-06)
 
 # About
 
@@ -652,5 +653,8 @@ void setup()
 ![](https://github.com/Avenge-PRC777/Digital-Signal-Processing/blob/master/LAB_05/images/RespRateArduino.png)
 
 > Respiration rate in arduino
+
+# Lab 06
+Lab 06 onwards documentation is present inside respective folders; Thank you :)
 
 >>>>>>> a75e612079e71da393283e09d2d20d23981aa151
